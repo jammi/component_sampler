@@ -1,0 +1,12 @@
+
+
+= Riassence Component Sampler
+
+Component Sampler is a simple application that contains the components bundled with the rsence core.
+
+
+== Installation
+Place this directory into your plugins directory to deploy.
+
+
+
