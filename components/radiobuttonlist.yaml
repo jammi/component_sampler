@@ -1,11 +1,11 @@
-label: 'HCheckboxList'
+label: 'HRadiobuttonList'
 descr_height: 160
 descr: |
-  <p>This class is still at experimental phase. Please assume that the API will_ change later. HCheckboxList is a combined list of HCheckboxes.</p>
+  <p>HRadiobuttonList expects the setListItems to be set. See HListItems. The value of the instance is the selected key in the listItems.</p>
 yaml_height: 450
 yaml: |
   subviews:
-  - class: HCheckboxList
+  - class: HRadiobuttonList
     rect: [ 0, 0, 100, 70 ]
     options:
       value: [ 0 ]
@@ -14,11 +14,11 @@ yaml: |
       rect: [ 0 ]
       options:
         value:
-        - label: CheckBox1
+        - label: RadioButton1
           value: 1
-        - label: CheckBox2
+        - label: RadioButton2
           value: 0
-  - class: HCheckboxList
+  - class: HRadiobuttonList
     rect: [ 110, 0, 100, 70 ]
     options:
       value: [ 0 ]
@@ -27,10 +27,10 @@ yaml: |
       rect: [ 0 ]
       options:
         value:
-        - label: CheckBox1
+        - label: RadioButton1
           value: 1
           enabled: false
-        - label: CheckBox2
+        - label: RadioButton2
           value: 0
           enabled: false
 sample_height: 200

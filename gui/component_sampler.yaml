@@ -4,6 +4,7 @@ dependencies:
 - default_theme
 - controls
 - lists
+- datetime
 include:
 - sample_view
 - sample_tab_item
@@ -163,3 +164,52 @@ subviews:
           - class: SampleTabItem
             rect: [ 0 ]
             options: :components.confirmsheet
+  - class: HTabItem
+    rect: [ 0 ]
+    options:
+      label: Lists
+    subviews:
+    - class: HTab
+      rect: [ 8, 8, null, null, 8, 8 ]
+      options:
+        valueObjId: :values.tab_0_1
+      subviews:
+      - class: HTabItem
+        rect: [ 0 ]
+        options:
+          label: List Items
+        subviews:
+        - class: HTab
+          rect: [ 8, 8, null, null, 8, 8 ]
+          options:
+            valueObjId: :values.tab_0_1_0
+          subviews:
+          - class: SampleTabItem
+            rect: [ 0 ]
+            options: :components.checkboxlist
+          - class: SampleTabItem
+            rect: [ 0 ]
+            options: :components.radiobuttonlist
+  - class: HTabItem
+    rect: [ 0 ]
+    options:
+      label: Datetime
+    subviews:
+    - class: HTab
+      rect: [ 8, 8, null, null, 8, 8 ]
+      options:
+        valueObjId: :values.tab_0_2
+      subviews:
+      - class: HTabItem
+        rect: [ 0 ]
+        options:
+          label: Calendar
+        subviews:
+        - class: HTab
+          rect: [ 8, 8, null, null, 8, 8 ]
+          options:
+            valueObjId: :values.tab_0_2_0
+          subviews:
+          - class: SampleTabItem
+            rect: [ 0 ]
+            options: :components.calendar

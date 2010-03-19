@@ -1,0 +1,17 @@
+label: 'HCalendar'
+descr_height: 160
+descr: |
+  <p>Use HCalendar to display a month calendar that displays days as columns and weeks as rows. Its value is a date/time number specified in seconds since or before epoch (1970-01-01 00:00:00 UTC).</p>
+yaml_height: 450
+yaml: |
+  subviews:
+  - class: HCalendar
+    rect: [ 0, 0, 200, 200 ]
+    options:
+      value: 0
+  - class: HCalendar
+    rect: [ 250, 0, 200, 200 ]
+    options:
+      value: 0
+      enabled: false
+sample_height: 200
