@@ -1,4 +1,3 @@
-
 SampleTabItem = HClass.extend({
   constructor: function(_rect,_tab,_options){
     
@@ -40,12 +39,24 @@ SampleTabItem = HClass.extend({
       }
     );
     
-    var _sampleView = SampleView.nu(
-      [ 8, _sampleTop, null, _sampleHeight, 416, null ],
-      _tabItem
+    /* Sample Viewer area */
+    COMM.Queue.push(
+      function(_json,_class,_sampleTop,_sampleHeight,_tabItem){
+        // debugger;
+        JSONRenderer.nu(
+          _json,
+          _class.nu(
+            [ 8, _sampleTop, null, _sampleHeight, 416, null ],
+            _tabItem, {}
+          )
+        );
+      },
+      [_options.json,
+      SampleView,
+      _sampleTop,
+      _sampleHeight,
+      _tabItem]
     );
-    
-    JSONRenderer.nu( _options.json, _sampleView );
     
     return _tabItem;
   }
