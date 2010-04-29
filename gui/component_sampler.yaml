@@ -1,5 +1,5 @@
 type: GUITree
-version: 0.4
+version: 0.5
 dependencies:
 - default_theme
 - controls
@@ -13,203 +13,213 @@ class: HApplication
 extend:
   constructor: |
     function(_options){
-      this.base(20,'Component Sampler');
       this.options = _options;
+      this.base(20, 'Component Sampler');
     }
 options:
   checker_pattern_gif_url: :checker_pattern_gif_url
 subviews:
-- class: HTab
-  rect: [ 0, 0, null, null, 0, 0 ]
+- class: HWindow
+  rect: maxRect
   options:
-    valueObjId: :values.tab_0
+    label: 'Component Sampler'
+    closeButton: true
+    collapseButton: true
+    zoomButton: true
+    maxSize: [ 2000, 2000 ]
+    minSize: [ 900, 720 ]
   subviews:
-  - class: HTabItem
-    rect: [ 0 ]
+  - class: HTab
+    rect: [ 0, 0, null, null, 0, 0 ]
     options:
-      label: Controls
+      valueObjId: :values.tab_0
     subviews:
-    - class: HTab
-      rect: [ 8, 8, null, null, 8, 8 ]
+    - class: HTabItem
+      rect: none
       options:
-        valueObjId: :values.tab_0_0
+        label: Controls
       subviews:
-      - class: HTabItem
-        rect: [ 0 ]
+      - class: HTab
+        rect: [ 8, 8, null, null, 8, 8 ]
         options:
-          label: Buttons
+          valueObjId: :values.tab_0_0
         subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_0
+            label: Buttons
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.button
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.checkbox
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.radiobutton
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.uploader
-      - class: HTabItem
-        rect: [ 0 ]
-        options:
-          label: Text
-        subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_0
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.button
+            - class: SampleTabItem
+              rect: none
+              options: :components.checkbox
+            - class: SampleTabItem
+              rect: none
+              options: :components.radiobutton
+            - class: SampleTabItem
+              rect: none
+              options: :components.uploader
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_1
+            label: Text
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.stringview
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.textcontrol
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.passwordcontrol
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.textarea
-      - class: HTabItem
-        rect: [ 0 ]
-        options:
-          label: Sliders
-        subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_1
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.stringview
+            - class: SampleTabItem
+              rect: none
+              options: :components.textcontrol
+            - class: SampleTabItem
+              rect: none
+              options: :components.passwordcontrol
+            - class: SampleTabItem
+              rect: none
+              options: :components.textarea
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_2
+            label: Sliders
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.slider
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.vslider
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.stepper
-      - class: HTabItem
-        rect: [ 0 ]
-        options:
-          label: Indicators
-        subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_2
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.slider
+            - class: SampleTabItem
+              rect: none
+              options: :components.vslider
+            - class: SampleTabItem
+              rect: none
+              options: :components.stepper
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_3
+            label: Indicators
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.validatorview
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.progressbar
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.progressindicator
-      - class: HTabItem
-        rect: [ 0 ]
-        options:
-          label: Media
-        subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_3
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.validatorview
+            - class: SampleTabItem
+              rect: none
+              options: :components.progressbar
+            - class: SampleTabItem
+              rect: none
+              options: :components.progressindicator
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_4
+            label: Media
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.imageview
-      - class: HTabItem
-        rect: [ 0 ]
-        options:
-          label: Containers
-        subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_4
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.imageview
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_5
+            label: Containers
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.window
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.tab
-      - class: HTabItem
-        rect: [ 0 ]
-        options:
-          label: Dialogs
-        subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_5
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.window
+            - class: SampleTabItem
+              rect: none
+              options: :components.tab
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_0_6
+            label: Dialogs
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.sheet
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.alertsheet
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.confirmsheet
-  - class: HTabItem
-    rect: [ 0 ]
-    options:
-      label: Lists
-    subviews:
-    - class: HTab
-      rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_0_6
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.sheet
+            - class: SampleTabItem
+              rect: none
+              options: :components.alertsheet
+            - class: SampleTabItem
+              rect: none
+              options: :components.confirmsheet
+    - class: HTabItem
+      rect: none
       options:
-        valueObjId: :values.tab_0_1
+        label: Lists
       subviews:
-      - class: HTabItem
-        rect: [ 0 ]
+      - class: HTab
+        rect: [ 8, 8, null, null, 8, 8 ]
         options:
-          label: List Items
+          valueObjId: :values.tab_0_1
         subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_1_0
+            label: List Items
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.checkboxlist
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.radiobuttonlist
-  - class: HTabItem
-    rect: [ 0 ]
-    options:
-      label: Datetime
-    subviews:
-    - class: HTab
-      rect: [ 8, 8, null, null, 8, 8 ]
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_1_0
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.checkboxlist
+            - class: SampleTabItem
+              rect: none
+              options: :components.radiobuttonlist
+    - class: HTabItem
+      rect: none
       options:
-        valueObjId: :values.tab_0_2
+        label: Datetime
       subviews:
-      - class: HTabItem
-        rect: [ 0 ]
+      - class: HTab
+        rect: [ 8, 8, null, null, 8, 8 ]
         options:
-          label: Calendar
+          valueObjId: :values.tab_0_2
         subviews:
-        - class: HTab
-          rect: [ 8, 8, null, null, 8, 8 ]
+        - class: HTabItem
+          rect: none
           options:
-            valueObjId: :values.tab_0_2_0
+            label: Calendar
           subviews:
-          - class: SampleTabItem
-            rect: [ 0 ]
-            options: :components.calendar
+          - class: HTab
+            rect: [ 8, 8, null, null, 8, 8 ]
+            options:
+              valueObjId: :values.tab_0_2_0
+            subviews:
+            - class: SampleTabItem
+              rect: none
+              options: :components.calendar
