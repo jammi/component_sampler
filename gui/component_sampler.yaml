@@ -6,17 +6,12 @@ dependencies:
 - lists
 - datetime
 include:
-- sample_view
 - sample_tab_item
 
-class: HApplication
-extend:
-  constructor: |
-    function(_options){
-      this.options = _options;
-      this.base(20, 'Component Sampler');
-    }
+class: RSence.GUIApp
 options:
+  priority: 20
+  label: Component Sampler
   checker_pattern_gif_url: :checker_pattern_gif_url
 subviews:
 # - class: HWindow
@@ -29,6 +24,12 @@ subviews:
 #     maxSize: [ 2000, 2000 ]
 #     minSize: [ 900, 720 ]
 #   subviews:
+- class: HCenterView
+  rect: [ 0, 0, 900, 740]
+  options:
+    centerX: true
+    centerY: true
+  subviews:
   - class: HTab
     rect: [ 0, 0, null, null, 0, 0 ]
     bind: :values.tab_0
