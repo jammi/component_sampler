@@ -6,7 +6,7 @@ yaml_height: 380
 yaml: |
   subviews:
   - class: HSheet
-    rect: [ 32, 32, 440, 99 ]
+    rect: [ 0, 0, 440, 99 ]
     subviews:
     - class: HButton
       rect: [ 16, null, null, 24, 16, 8 ]

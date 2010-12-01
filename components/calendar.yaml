@@ -8,10 +8,10 @@ yaml: |
   - class: HCalendar
     rect: [ 0, 0, 200, 200 ]
     options:
-      value: 0
+      value: 1291194855
   - class: HCalendar
     rect: [ 250, 0, 200, 200 ]
     options:
-      value: 0
+      value: 1291194855
       enabled: false
 sample_height: 200

@@ -1,11 +1,11 @@
-label: 'HRadiobuttonList'
+label: HMiniMenu
 descr_height: 160
 descr: |
   <p>HRadiobuttonList expects the setListItems to be set. See HListItems. The value of the instance is the selected key in the listItems.</p>
 yaml_height: 450
 yaml: |
   subviews:
-  - class: HRadiobuttonList
+  - class: HMiniMenu
     rect: [ 0, 0, 100, 70 ]
     options:
       value: [ 0 ]
@@ -14,11 +14,11 @@ yaml: |
       rect: [ 0 ]
       options:
         value:
-        - label: RadioButton1
+        - label: Item 1
           value: 1
-        - label: RadioButton2
+        - label: Item 2
           value: 0
-  - class: HRadiobuttonList
+  - class: HMiniMenu
     rect: [ 110, 0, 100, 70 ]
     options:
       value: [ 0 ]
@@ -28,8 +28,8 @@ yaml: |
       options:
         enabled: false
         value:
-        - label: RadioButton1
+        - label: Item 1
           value: 1
-        - label: RadioButton2
+        - label: Item 2
           value: 0
 sample_height: 200

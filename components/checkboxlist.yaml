@@ -26,11 +26,10 @@ yaml: |
     - class: HListItems
       rect: [ 0 ]
       options:
+        enabled: false
         value:
         - label: CheckBox1
           value: 1
-          enabled: false
         - label: CheckBox2
           value: 0
-          enabled: false
 sample_height: 200

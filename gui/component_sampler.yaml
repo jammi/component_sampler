@@ -190,6 +190,15 @@ subviews:
             - class: SampleTabItem
               rect: none
               options: :components.radiobuttonlist
+            - class: SampleTabItem
+              rect: none
+              options: :components.minimenu
+            - class: SampleTabItem
+              rect: none
+              options: :components.propertylist
+            - class: SampleTabItem
+              rect: none
+              options: :components.propertylisteditor
     - class: HTabItem
       rect: none
       options:
