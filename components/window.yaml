@@ -11,11 +11,20 @@ yaml: |
     rect: [ 32, 190, 200, 150 ]  
     options:
       label: Two
+      noResize: true
+      fullWindowMove: true
+      resizeButton: true
   - class: HWindow
     rect: [ 250, 32, 200, 150 ]
     options:
       label: Three
       closeButton: true
+      maximizeButton: true
+    subviews:
+    - HView:
+        rect: [ 0, 0, 800, 600 ]
+        style:
+          backgroundColor: green
   - class: HWindow
     rect: [ 250, 190, 200, 150 ]
     options:
@@ -23,4 +32,9 @@ yaml: |
       closeButton: true
       collapseButton: true
       zoomButton: true
+    subviews:
+    - HView:
+        rect: [ 0, 0, 400, 300 ]
+        style:
+          backgroundColor: red
 sample_height: 400

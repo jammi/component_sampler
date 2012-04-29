@@ -1,4 +1,4 @@
-label: 'HPropertyList'
+label: HPropertyList
 descr_height: 160
 descr: |
   <p>HRadiobuttonList expects the setListItems to be set. See HListItems. The value of the instance is the selected key in the listItems.</p>
@@ -6,7 +6,7 @@ yaml_height: 450
 yaml: |
   subviews:
   - class: HPropertyList
-    rect: [ 0, 0, 100, 70 ]
+    rect: [ 0, 0, ~, ~, 0, 0 ]
     options:
       value:
         key: value

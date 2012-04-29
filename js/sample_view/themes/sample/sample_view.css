@@ -1,0 +1,7 @@
+.sample > .sample_view_bg {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  border: 1px solid #000000;
+  background-color: #e6e7e9;
+  background-image: url(#{this.getThemeGfxFile('/checker_pattern.gif')});
+}

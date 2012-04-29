@@ -1,11 +1,11 @@
-label: 'HCheckboxList'
+label: HPopupMenu
 descr_height: 160
 descr: |
-  <p>This class is still at experimental phase. Please assume that the API will_ change later. HCheckboxList is a combined list of HCheckboxes.</p>
+  <p>HRadiobuttonList expects the setListItems to be set. See HListItems. The value of the instance is the selected key in the listItems.</p>
 yaml_height: 450
 yaml: |
   subviews:
-  - class: HCheckboxList
+  - class: HPopupMenu
     rect: [ 0, 0, 100, 70 ]
     options:
       value: [ 0 ]
@@ -13,11 +13,11 @@ yaml: |
     - class: HListItems
       options:
         value:
-        - label: CheckBox1
+        - label: Item 1
           value: 1
-        - label: CheckBox2
+        - label: Item 2
           value: 0
-  - class: HCheckboxList
+  - class: HPopupMenu
     rect: [ 110, 0, 100, 70 ]
     options:
       value: [ 0 ]
@@ -26,8 +26,8 @@ yaml: |
       options:
         enabled: false
         value:
-        - label: CheckBox1
+        - label: Item 1
           value: 1
-        - label: CheckBox2
+        - label: Item 2
           value: 0
 sample_height: 200

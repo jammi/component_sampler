@@ -11,7 +11,6 @@ yaml: |
       value: [ 0 ]
     subviews:
     - class: HListItems
-      rect: [ 0 ]
       options:
         value:
         - label: Item 1
@@ -24,7 +23,6 @@ yaml: |
       value: [ 0 ]
     subviews:
     - class: HListItems
-      rect: [ 0 ]
       options:
         enabled: false
         value:

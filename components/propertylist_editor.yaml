@@ -6,7 +6,7 @@ yaml_height: 450
 yaml: |
   subviews:
   - class: HPropertyListEditor
-    rect: [ 0, 0, 100, 70 ]
+    rect: [ 0, 0, ~, ~, 0, 0 ]
     options:
       value:
         key: value

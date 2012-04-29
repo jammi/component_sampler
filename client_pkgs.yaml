@@ -1,0 +1,12 @@
+:src_dirs:
+  - ./js
+:packages:
+  sample_components:
+  - sample_view
+  - sample_tab_item
+:theme_names:
+  - sample
+:compound_packages:
+  sample:
+  - sample_theme
+  - sample_components

@@ -1,0 +1,23 @@
+type: GUITree
+version: 1.0
+dependencies:
+- sample
+
+class: RSence.GUIApp
+options:
+  priority: 20
+  label: Component Sampler
+subviews:
+- HWindow:
+    rect: maxRect
+    label: Component Sampler
+    options:
+      closeButton: true
+      collapseButton: true
+      zoomButton: true
+      minSize: [ 900, 720 ]
+  subviews:
+  - HTab:
+      rect: [ 0, 8, ~, ~, 0, 0 ]
+      bind: :values.tab_0
+    subviews: :tab_tree
