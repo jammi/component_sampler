@@ -10,6 +10,7 @@
     - button
     - clickbutton
     - checkbox
+    - onoffbutton
     - radiobutton
   - Text:
     - stringview
@@ -53,8 +54,12 @@
     - calendar
     - timesheet
     - datetimepicker
+    - datepicker
+    - timepicker
   - Uploading:
     - uploader
+  - Miscellaneus:
+    - chatcontrol
 - Library_Classes:
   - Core:
     - class

@@ -18,6 +18,15 @@ class ComponentSampler < GUIPlugin
     end
     return components
   end
+  def tab_value( msg )
+    ses = get_ses( msg )
+    tab_name = "tab_#{ses[:tab_num]}".to_sym
+    unless ses.has_key? tab_name
+      ses[tab_name] = HValue.new( msg, 0 )
+    end
+    ses[:tab_num] += 1
+    return ses[tab_name].value_id
+  end
   def parse_tabtree_src( msg, src, gui, opt )
     src.each do |src_item|
       if src_item.class == Hash
@@ -30,10 +39,11 @@ class ComponentSampler < GUIPlugin
           }
         }
         if tab_subviews.class == Array
+          tab_value_id = tab_value( msg )
           gui_item['subviews'] = [{
             'HTab' => {
-              'rect' => opt[:rect]#,
-              # 'bind' => TO DO
+              'rect' => opt[:rect],
+              'bind' => tab_value_id
             },
             'subviews' => []
           }]
@@ -66,8 +76,9 @@ class ComponentSampler < GUIPlugin
   def gui_params( msg )
     params = super
     params[:components] = parse_components( msg )
+    get_ses( msg )[:tab_num] = 0
     params[:tab_tree] = parse_tabtree( msg, params )
-    require 'pp'; pp params[:tab_tree]
+    # require 'pp'; pp params[:tab_tree]
     params
   end
 end
