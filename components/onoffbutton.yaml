@@ -9,7 +9,8 @@ yaml: |
     rect: [ 32, 32, 160, 24 ]
     options:
       value: true
-      label: [ IN, OUT ]
+      label: IN
+      labelOff: OUT
   - class: HOnOffButton
     rect: [ 32, 60, 160, 24 ]
     options:
@@ -20,18 +21,20 @@ yaml: |
     rect: [ 200, 32, 160, 24 ]
     options:
       value: false
-      label: [ On, Off ]
+      label: 'On'
+      labelOff: 'Off'
   - class: HOnOffButton
     rect: [ 200, 60, 160, 24 ]
     options:
       value: false
-      label: [ On, Off ]
+      label: [ 'On', 'Off' ]
       enabled: false
   - class: HOnOffButton
     rect: [ 400, 32, 160, 24 ]
     options:
       value: null
-      label: [ True, False ]
+      label: True
+      labelOff: False
   - class: HOnOffButton
     rect: [ 400, 60, 160, 24 ]
     options:

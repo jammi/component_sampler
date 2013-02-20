@@ -30,6 +30,15 @@
   - Graphics:
     - imageview
     - svg
+  - Date_and_Time:
+    - calendar
+    - timesheet
+    - calendarpicker
+    - datetimepicker
+    - datepicker
+    - timepicker
+  - Misc:
+    - speech_bubble
 - Containers:
   - view
   - window
@@ -41,6 +50,7 @@
   - scrollview
   - centerview
   - inlineview
+  - chatpanel
 - Complex_Controls:
   - List_Handling_and_Choices:
     - minimenu
@@ -50,16 +60,8 @@
   - Structure_Handling_and_Editing:
     - propertylist
     - propertylisteditor
-  - Date_and_Time:
-    - calendar
-    - timesheet
-    - datetimepicker
-    - datepicker
-    - timepicker
   - Uploading:
     - uploader
-  - Miscellaneus:
-    - chatcontrol
 - Library_Classes:
   - Core:
     - class

@@ -1,0 +1,46 @@
+label: 'HNumericTextControl'
+descr_height: 150
+descr: |
+  <p>HNumericTextControl is a control unit that represents an editable input line of text as a number.</p>
+yaml_height: 200
+yaml: |
+  subviews:
+  - class: HNumericTextControl
+    rect: [ 32, 32, 200, 24 ]
+    options:
+      value: 123
+      minValue: 100
+      maxValue: 200
+  - class: HNumericTextControl
+    rect: [ 32, 60, 200, 24 ]
+    options:
+      value: 123
+      minValue: 100
+      maxValue: 200
+      enabled: false
+  - class: HNumericTextControl
+    label: 'Label:'
+    rect: [ 250, 32, 200, 24 ]
+    options:
+      decimalNumber: true
+      decimalPlaces: 1
+      decimalSeparator: ','
+      withStepper: true
+      numberIncrement: 0.2
+      value: 123.4
+      minValue: 100
+      maxValue: 200
+  - class: HNumericTextControl
+    rect: [ 250, 60, 200, 24 ]
+    label: 'Label:'
+    options:
+      decimalNumber: true
+      decimalPlaces: 1
+      decimalSeparator: ','
+      withStepper: true
+      numberIncrement: 0.2
+      value: 123.4
+      minValue: 100
+      maxValue: 200
+      enabled: false
+sample_height: 115

@@ -1,0 +1,39 @@
+label: 'HCalendarPulldown'
+descr_height: 160
+descr: |
+  <p>Simple calendar pulldown component, uses epoch number (seconds since 1970) as its value.</p>
+  <p>When a date is set, it's rounded off to the beginning of the day (in UTC).</p>
+yaml_height: 380
+yaml: |
+  subviews:
+  - HCalendarPulldown:
+      rect: [ 32, 32, 24, 24 ]
+      value: 1361089425
+      options:
+        calendarAlign: left
+  - HCalendarPulldown:
+      rect: [ 260, 32, 24, 24 ]
+      value: 1361089425
+      options:
+        calendarAlign: right
+  - HCalendarPulldown:
+      rect: [ 300, 32, 24, 24 ]
+      value: 1361089425
+  - HCalendarPulldown:
+      rect: [ 32, 60, 24, 24 ]
+      value: 1361089425
+      options:
+        calendarAlign: left
+        enabled: false
+  - HCalendarPulldown:
+      rect: [ 260, 60, 24, 24 ]
+      value: 1361089425
+      options:
+        calendarAlign: right
+        enabled: false
+  - HCalendarPulldown:
+      rect: [ 300, 60, 24, 24 ]
+      value: 1361089425
+      options:
+        enabled: false
+sample_height: 100

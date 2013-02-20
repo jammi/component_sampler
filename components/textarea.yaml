@@ -20,4 +20,21 @@ yaml: |
         lines of 
         text
       enabled: false
+  - class: HTextArea
+    rect: [ 250, 32, 200, 100 ]
+    label: "Several lines of text:"
+    options:
+      value:  |
+        HTextArea contains several
+        lines of 
+        text
+  - class: HTextArea
+    rect: [ 250, 140, 200, 100 ]
+    label: "Several lines of text:"
+    options:
+      value: |
+        HTextArea contains several
+        lines of 
+        text
+      enabled: false
 sample_height: 270

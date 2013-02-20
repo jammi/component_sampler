@@ -1,0 +1,21 @@
+label: 'HDatePicker'
+descr_height: 160
+descr: |
+  <p>Simple date picker component, uses epoch number (seconds since 1970) as its value.</p>
+  <p>When a date is set, it's rounded off to the beginning of the day (in UTC).</p>
+  <p>Optionally shown with calendar picker pulldown.</p>
+yaml_height: 380
+yaml: |
+  subviews:
+  - HDatePicker:
+      rect: [ 32, 32, 120, 24 ]
+      label: 'Date:'
+      value: 1361089425
+  - HDatePicker:
+      rect: [ 160, 32, 150, 24 ]
+      label: 'Date &amp;<br>picker:'
+      value: 1361089425
+      options:
+        fieldFormat: 'MM.DD.YYYY'
+        calendarPicker: true
+sample_height: 100

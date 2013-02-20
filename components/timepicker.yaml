@@ -1,0 +1,33 @@
+label: 'HTimePicker'
+descr_height: 160
+descr: |
+  <p>Simple time picker component, uses epoch number (seconds since 1970) as its value.</p>
+  <p>When a date is set, it's rounded off to the beginning of the day (in UTC).</p>
+  <p>Optionally picks hours:minutes and hours:minutes:seconds.</p>
+yaml_height: 380
+yaml: |
+  subviews:
+  - HTimePicker:
+      rect: [ 32, 32, 120, 24 ]
+      value: 0
+  - HTimePicker:
+      rect: [ 32, 60, 120, 24 ]
+      value: 1361089425
+      options:
+        fieldFormat: 'hh:mm a'
+  - HTimePicker:
+      rect: [ 160, 32, 120, 24 ]
+      value: 0
+      options:
+        fieldFormat: 'HH.mm.ss'
+  - HTimePicker:
+      rect: [ 160, 60, 120, 24 ]
+      value: 1361391825
+      options:
+        fieldFormat: 'hh:mm a'
+  - HTimePicker:
+      rect: [ 290, 32, 120, 24 ]
+      value: 600000
+      options:
+        fieldFormat: 'ddd HHH[h]mm[m]ss[s]'
+sample_height: 100
