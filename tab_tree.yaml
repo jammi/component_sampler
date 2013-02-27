@@ -58,6 +58,7 @@
     - radiobuttonlist
     - checkboxlist
   - Structure_Handling_and_Editing:
+    - table
     - propertylist
     - propertylisteditor
   - Uploading:
